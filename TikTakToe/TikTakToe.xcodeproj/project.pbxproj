@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		277CE8F726CDAC1200DD6CDD /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CE8F626CDAC1200DD6CDD /* TicTacToe.swift */; };
 		FC1C26BB26CD79A5000E1651 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C26BA26CD79A5000E1651 /* AppDelegate.swift */; };
 		FC1C26BD26CD79A5000E1651 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C26BC26CD79A5000E1651 /* SceneDelegate.swift */; };
 		FC1C26BF26CD79A5000E1651 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C26BE26CD79A5000E1651 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		277CE8F626CDAC1200DD6CDD /* TicTacToe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
 		FC1C26B726CD79A5000E1651 /* TikTakToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTakToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1C26BA26CD79A5000E1651 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC1C26BC26CD79A5000E1651 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		277CE8EF26CDA8F100DD6CDD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC1C26BA26CD79A5000E1651 /* AppDelegate.swift */,
+				FC1C26BC26CD79A5000E1651 /* SceneDelegate.swift */,
+				FC1C26C326CD79A7000E1651 /* Assets.xcassets */,
+				FC1C26C826CD79A7000E1651 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		277CE8F126CDA93300DD6CDD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				277CE8F526CDAC0800DD6CDD /* Models */,
+				277CE8F226CDA93B00DD6CDD /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		277CE8F226CDA93B00DD6CDD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC1C26BE26CD79A5000E1651 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		277CE8F526CDAC0800DD6CDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				277CE8F626CDAC1200DD6CDD /* TicTacToe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FC1C26AE26CD79A5000E1651 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +94,10 @@
 		FC1C26B926CD79A5000E1651 /* TikTakToe */ = {
 			isa = PBXGroup;
 			children = (
-				FC1C26BA26CD79A5000E1651 /* AppDelegate.swift */,
-				FC1C26BC26CD79A5000E1651 /* SceneDelegate.swift */,
-				FC1C26BE26CD79A5000E1651 /* ViewController.swift */,
+				277CE8F126CDA93300DD6CDD /* Controllers */,
+				277CE8EF26CDA8F100DD6CDD /* Resources */,
 				FC1C26C026CD79A5000E1651 /* Main.storyboard */,
-				FC1C26C326CD79A7000E1651 /* Assets.xcassets */,
 				FC1C26C526CD79A7000E1651 /* LaunchScreen.storyboard */,
-				FC1C26C826CD79A7000E1651 /* Info.plist */,
 			);
 			path = TikTakToe;
 			sourceTree = "<group>";
@@ -139,6 +174,7 @@
 			files = (
 				FC1C26BF26CD79A5000E1651 /* ViewController.swift in Sources */,
 				FC1C26BB26CD79A5000E1651 /* AppDelegate.swift in Sources */,
+				277CE8F726CDAC1200DD6CDD /* TicTacToe.swift in Sources */,
 				FC1C26BD26CD79A5000E1651 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QDM5JWF95B;
-				INFOPLIST_FILE = TikTakToe/Info.plist;
+				INFOPLIST_FILE = TikTakToe/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QDM5JWF95B;
-				INFOPLIST_FILE = TikTakToe/Info.plist;
+				INFOPLIST_FILE = TikTakToe/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
