@@ -9,11 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: - Outlets
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    //MARK: - Action
+    @IBAction func spotButtonTapped(_ sender: UIButton) {
+        print("\(sender.tag)")
+    }
+    
 }
 
